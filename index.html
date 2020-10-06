@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -24,7 +24,7 @@
         <header class="header">
           <a href="#" class="logo">
             <img
-              src="./img/content/logos/logo-main.png"
+              src="img/content/logos/logo-main.png"
               alt="lost shirt logo"
               class="logo__pic"
             />
@@ -35,8 +35,10 @@
           </a>
         </header>
         <div class="hero__content">
-          <div class="fade-slider">
-            <div class="fade-slider__item">
+          <ul class="fade-slider">
+            <li
+              class="fade-slider__item fade-slider__item--style-thirts fade-slider__item--visible"
+            >
               <div class="fade-slider__text">
                 <h1 class="lined-text">
                   <div class="lined-text__word">ТРИ</div>
@@ -49,9 +51,75 @@
                   </div>
                 </h1>
               </div>
-            </div>
-          </div>
+            </li>
+            <li class="fade-slider__item fade-slider__item--style-games">
+              <div class="fade-slider__text lined-text lined-text--no-indent">
+                <h1 class="lined-text lined-text--no-indent1">
+                  <span class="lined-text__word">Любимые игры</span>
+                  <span class="lined-text__word lined-text__word--color-yellow"
+                    >на лучших футболках</span
+                  >
+                </h1>
+              </div>
+            </li>
+            <li class="fade-slider__item fade-slider__item--style-presents">
+              <div class="fade-slider__text">
+                <h1 class="lined-text lined-text--no-indent">
+                  <span class="lined-text__word">Подарки</span>
+                  <span class="lined-text__word lined-text__word--color-yellow"
+                    >для любимых</span
+                  >
+                </h1>
+              </div>
+            </li>
+          </ul>
         </div>
+        <aside class="sidebar">
+          <a href="#" class="sidebar__humburger">
+            <svg class="sidebar__humburger-icon">
+              <use xlink:href="img/icons-sprite.svg#bars"></use>
+            </svg>
+          </a>
+          <div class="sidebar__header">
+            <a href="#" class="logo">
+              <img
+                src="img/content/logos/logo-main.png"
+                alt=""
+                class="logo__image"
+              />
+            </a>
+            <a href="#" class="sidebar__close">
+              <svg class="sidebar__close-icon">
+                <use xlink:href="/img/icons-sprite.svg#cross"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="side-menu sidebar__menu">
+            <ul class="side-menu__list">
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Десткая колеекция</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Мужская коллекция</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Женская коллекция</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Популярные принты</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Новые принты</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Специальные предложения</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Скоро в продаже</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
       </section>
 
       <section class="products">
@@ -354,5 +422,7 @@
         </div>
       </footer>
     </div>
+    <script src="js/sidebar-menu.js"></script>
+    <script src="js/fade-slider.js"></script>
   </body>
 </html>
