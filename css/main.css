@@ -266,7 +266,7 @@ ul > li {
 .filter__link:hover {
   color: var(--red);
 }
-.filter__link--active {
+.filter__link--active .filter__link {
   background-color: black;
   color: var(--yellow);
 }
@@ -283,7 +283,7 @@ ul > li {
   height: 386px;
   background: var(--yellow);
   margin-bottom: 35px;
-  margin-left: 37px;
+  margin-left: 35px;
 }
 .products__price {
   position: absolute;
